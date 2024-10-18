@@ -21,8 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const handleOnMove = e => {
     if(carrousel.dataset.mouseDownAt === "0") return;
     
-    const mouseDelta = parseFloat(carrousel.dataset.mouseDownAt) - e.clientX,
-          maxDelta = window.innerWidth / 2;
+    const mouseDelta = parseFloat(carrousel.dataset.mouseDownAt) - e.clientX, maxDelta = window.innerWidth * (0.5);
     
     const percentage = (mouseDelta / maxDelta) * -100,
           nextPercentageUnconstrained = parseFloat(carrousel.dataset.prevPercentage) + percentage,
