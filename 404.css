@@ -1,4 +1,4 @@
-html { background-color: #1a1a1a; user-select: none; height: 100vh; width: 100vw;}
+html { background-color: #141414; user-select: none; height: 100vh; width: 100vw;}
 
 body {
     padding: 0px;
@@ -18,7 +18,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 11vw;
-    color: #ffffff;
+    color: #F6F9FB;
 }
 
 #icon{
@@ -34,7 +34,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 1.2vw;
-    color: #ffffff;
+    color: #F6F9FB;
 }
 
 .homeTxt {
