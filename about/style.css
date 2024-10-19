@@ -1,4 +1,4 @@
-html { background-color: #141414; user-select: none; height: 100vh; width: 100vw; overflow: hidden; }
+html { background-color: #141414; height: 100vh; width: 100vw; overflow: hidden; }
 
 body {
     height: 100vh;
@@ -9,6 +9,7 @@ body {
     background-color: #141414;
     margin: 0rem;
     overflow: hidden;
+    color: #F6F9FB;
 }
 
 a {
@@ -16,8 +17,18 @@ a {
     text-decoration: none;
 }
 
+p {
+    padding-left: 10px;
+    font-size: large;
+}
+
+::selection {
+    background-color: #001659;
+}
+
 .nav {
     position: absolute;
+    user-select: none;
     top: 2%;
     width: 100%;
     display: flex;
@@ -37,4 +48,19 @@ a {
 
 #home:hover {
     color: #F6F9FB;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+#contact {
+    color: #F6F9FB;
+    font-size: 27px;
+}
+
+.content {
+    padding: 20vh 10vw;
 }
