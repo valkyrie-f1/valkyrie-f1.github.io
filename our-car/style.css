@@ -1,0 +1,70 @@
+html { background-color: #141414; height: 100vh; width: 100vw; overflow: hidden; }
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #141414;
+    margin: 0rem;
+    overflow: hidden;
+    color: #F6F9FB;
+}
+
+a {
+    color: #505050;
+    text-decoration: none;
+}
+
+p {
+    padding-left: 10px;
+    font-size: large;
+}
+
+::selection {
+    background-color: #001659;
+}
+
+.nav {
+    position: absolute;
+    user-select: none;
+    top: 2%;
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    gap: 6rem;
+    justify-content: center;
+}
+
+#about {
+    transition: all 0.2s ease-in-out;
+}
+
+#about:hover {
+    color: #F6F9FB;
+}
+
+#home {
+    transition: all 0.2s ease-in-out;
+}
+
+#home:hover {
+    color: #F6F9FB;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+#contact {
+    color: #F6F9FB;
+    font-size: 27px;
+}
+
+.content {
+    padding: 20vh 10vw;
+}

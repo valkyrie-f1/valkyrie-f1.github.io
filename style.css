@@ -74,7 +74,7 @@ a {
 #arrow {
   position: absolute;
   left: 50%;
-  top: 15%;
+  top: 16%;
   transform: translate(-50%, 0%);
   font-size: 3vh;
   color: #474747;
