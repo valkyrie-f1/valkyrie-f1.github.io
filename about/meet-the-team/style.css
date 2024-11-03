@@ -1,0 +1,127 @@
+html { background-color: #141414; height: 100vh; width: 100vw; overflow: hidden; }
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #141414;
+    margin: 0rem;
+    overflow: hidden;
+    color: #F6F9FB;
+}
+
+a {
+    color: #505050;
+    text-decoration: none;
+}
+
+p {
+    padding-top: 0px;
+    margin: 0px;
+    padding-left: 1vw;
+    font-size: large;
+}
+
+
+hr {
+    width: 90%;
+}
+
+::selection {
+    background-color: #001659;
+}
+
+.nav {
+    position: absolute;
+    user-select: none;
+    top: 2%;
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    gap: 6rem;
+    justify-content: center;
+}
+
+#about {
+    transition: all 0.2s ease-in-out;
+}
+
+#about:hover {
+    color: #F6F9FB;
+}
+
+#home {
+    transition: all 0.2s ease-in-out;
+}
+
+#home:hover {
+    color: #F6F9FB;
+}
+
+.content {
+    padding: 20vh 10vw;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.left {
+    flex-basis: 49.9%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hr { flex-basis: 0.2%; }
+
+.hr > hr {
+    width: 100%;
+    height: 100%;
+    background-color: #ED5A95;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dude {
+    box-sizing: border-box;
+    padding: 1vh 2vw;
+    height: calc(100% / 3);
+    display: flex;
+    flex-direction: row;
+}
+
+.mugshot {
+    aspect-ratio: 1 / 1;
+    height: calc(100% - 1.3vw);
+    border-radius: 50%;
+    filter: sepia(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.mugshot:hover {
+    aspect-ratio: 1 / 1;
+    filter: sepia(0);
+    border-radius: 0px;
+}
+
+.desc {
+    flex-basis: 75%;
+    height: 100%;
+    align-content: center;
+}
+
+.title {
+    padding-left: 1vw;
+    font-size: xx-large;
+    font-weight: bold;
+}

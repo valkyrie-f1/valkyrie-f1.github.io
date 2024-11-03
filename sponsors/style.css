@@ -39,6 +39,10 @@ p {
 }
 
 #about {
+    transition: all 0.2s ease-in-out;
+}
+
+#about:hover {
     color: #F6F9FB;
 }
 
@@ -63,18 +67,4 @@ p {
 
 .content {
     padding: 20vh 10vw;
-}
-
-.redirect {
-    color: #F6F9FB;
-    text-decoration: underline;
-    text-decoration-color: #ED5A95;
-    text-underline-offset: auto;
-    transition: all 0.2s ease-in-out;
-}
-
-.redirect:hover {
-    color: #ED5A95;
-    text-decoration: underline;
-    text-underline-offset: 0.3vh;
 }
