@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="/Assets/css/fontawesome.min.css">
 
     <link rel="icon" href="/Assets/logo.jpg" type="image/x-n">
-    <link rel="stylesheet" href="style.css">
-    <!-- <script>
-        window.onload = function() {
-            if (window.innerWidth < 600) {
-                window.location.href = "https://example.com/mobile";
+    <link rel="stylesheet" href="/about/meet-the-team/style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.innerWidth < 955) {
+                window.location.href = '/about/meet-the-team/mobile.html';
             }
-        };
-    </script> -->
+            window.addEventListener('resize', function() {
+                if (window.innerWidth < 955) { window.location.href = '/about/meet-the-team/mobile.html'; }
+            });
+        });
+    </script>
     <title>Valkyie | Meet the team</title>
 </head>
 <body>
@@ -30,7 +33,7 @@
     <div class="content">
         <div class="left">
             <div class="dude">
-                <img src="/Assets/logo.jpg" class="mugshot">
+                <img src="/Assets/logo.jpg" class="mugshot" draggable="false">
                 <div class="desc">
                     <div class="title">Team Leader</div>
                     <p>Bivabasu</p>
@@ -38,7 +41,7 @@
             </div>
             <hr>
             <div class="dude">
-                <img src="/Assets/logo.jpg" class="mugshot">
+                <img src="/Assets/logo.jpg" class="mugshot" draggable="false">
                 <div class="desc">
                     <div class="title">Graphic Designer</div>
                     <p>Shaurya</p>
@@ -46,7 +49,7 @@
             </div>
             <hr>
             <div class="dude">
-                <img src="/Assets/logo.jpg" class="mugshot">
+                <img src="/Assets/logo.jpg" class="mugshot" draggable="false">
                 <div class="desc">
                     <div class="title">Manufacturing Manager</div>
                     <p>Ojasva</p>
@@ -56,7 +59,7 @@
         <div class="hr"><hr></div>
         <div class="right">
             <div class="dude">
-                <img src="/Assets/logo.jpg" class="mugshot">
+                <img src="/Assets/logo.jpg" class="mugshot" draggable="false">
                 <div class="desc">
                     <div class="title">Marketing Manager</div>
                     <p>Pranav</p>
@@ -64,7 +67,7 @@
             </div>
             <hr>
             <div class="dude">
-                <img src="/Assets/logo.jpg" class="mugshot">
+                <img src="/Assets/logo.jpg" class="mugshot" draggable="false">
                 <div class="desc">
                     <div class="title">Resource Manager</div>
                     <p>Aveeshay</p>
@@ -72,7 +75,7 @@
             </div>
             <hr>
             <div class="dude">
-                <img src="/Assets/logo.jpg" class="mugshot">
+                <img src="/Assets/logo.jpg" class="mugshot" draggable="false">
                 <div class="desc">
                     <div class="title">Design Engineer</div>
                     <p>Abyaz</p>
