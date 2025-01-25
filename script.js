@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const handleOnDown = e => {
         carrousel.dataset.mouseDownAt = e.clientX;
-        isMouseMoved = false;  // Reset movement flag when mouse is pressed down
+        isMouseMoved = false;
     };
 
     const handleOnUp = () => {
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const handleOnMove = e => {
         if (carrousel.dataset.mouseDownAt === "0") return;
 
-        isMouseMoved = true;  // Set the flag to true if the mouse moves
+        isMouseMoved = true;
 
         const mouseDelta = parseFloat(carrousel.dataset.mouseDownAt) - e.clientX,
               maxDelta = window.innerWidth * 0.4;
@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 
-    // Function to handle the redirection, only if the mouse has not moved
     window.redirect = function(page) {
         if (!isMouseMoved) {
             window.location.href = page;
