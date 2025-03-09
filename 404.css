@@ -36,6 +36,14 @@ a:hover {
     background-color: #001659;
 }
 
+.logo {
+    position: absolute;
+    top: 1%;
+    left: 2rem;
+    height: 50px;
+    z-index: 5;
+}
+
 .err {
     text-align: center;
     transform: translate(0px, -30%);

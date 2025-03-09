@@ -55,6 +55,14 @@ p {
     color: #F6F9FB;
 }
 
+.logo {
+    position: absolute;
+    top: 1%;
+    left: 2rem;
+    height: 50px;
+    z-index: 5;
+}
+
 .nav {
     padding-top: 1%;
     user-select: none;
