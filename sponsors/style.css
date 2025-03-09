@@ -68,3 +68,14 @@ p {
 .content {
     padding: 20vh 10vw;
 }
+
+.holder {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    border-radius: 4px;
+    border: 2px solid #202020;
+}
