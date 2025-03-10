@@ -28,21 +28,21 @@ p {
 
 .logo {
     position: absolute;
-    top: 1%;
-    left: 2rem;
-    height: 50px;
+    top: 0.1%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 75px;
     z-index: 5;
 }
 
 .nav {
     position: absolute;
-    user-select: none;
     top: 2%;
     width: 100%;
     display: flex;
     font-weight: bold;
     flex-direction: row;
-    gap: 6rem;
+    gap: 8rem;
     justify-content: center;
 }
 
