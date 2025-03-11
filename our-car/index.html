@@ -14,6 +14,41 @@
 
     <link rel="icon" href="/Assets/logo.jpg" type="image/x-n">
     <link rel="stylesheet" href="/our-car/style.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const galleryImages = document.querySelectorAll(".gallery img");
+            const modal = document.getElementById("modal");
+            const modalImg = document.getElementById("modalImg");
+            const closeBtn = document.getElementById("closeBtn");
+            const downloadBtn = document.getElementById("downloadBtn");
+
+            galleryImages.forEach(img => {
+                img.addEventListener("click", function () {
+                    modal.classList.add("active");
+                    const fullSizeSrc = this.src.replace("/thumb/", "/fullsize/");
+                    modalImg.src = fullSizeSrc;
+                    downloadBtn.href = this.src.replace("/thumb/", "/raw/");
+                });
+            });
+
+            modal.addEventListener("click", function () {
+                modal.classList.remove("active");
+            });
+
+            closeBtn.addEventListener("click", function (event) {
+                event.stopPropagation();
+                modal.classList.remove("active");
+            });
+
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "Escape") {
+                    modal.classList.remove("active");
+                }
+            });
+        });
+    </script>
+
     <title>Valkyie | Our Car</title>
 </head>
 <body>
@@ -40,6 +75,19 @@
             <li>Autodesk Fusion 360</li>
             <li>Autodesk CFD 2024</li>
         </ul></p>
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="/Assets/OnlyCars/Gallery/thumb/1.png" draggable="false">
+            <img src="/Assets/OnlyCars/Gallery/thumb/2.png" draggable="false">
+            <img src="/Assets/OnlyCars/Gallery/thumb/3.png" draggable="false">
+        </div>
+        <div class="modal" id="modal">
+            <div class="controls">
+                <button style="all: unset;"><a id="downloadBtn" href="#" download><i class="fa-solid fa-download"></i></a></button>
+                <button class="close-btn" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <img id="modalImg" src="" alt="">
+        </div>
     </div>
 </body>
 </html>
