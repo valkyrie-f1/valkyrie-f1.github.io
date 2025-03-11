@@ -22,7 +22,6 @@ a {
     left: 50%;
     transform: translate(-50%, 0%);
     height: 75px;
-    z-index: 5;
 }
 
 .nav {

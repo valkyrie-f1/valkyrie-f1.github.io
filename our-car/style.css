@@ -117,20 +117,6 @@ p {
     font-family: "IBM Plex Mono", monospace;
 }
 
-.download {
-    color: #F6F9FB;
-    text-decoration: underline;
-    text-decoration-color: #ED5A95;
-    text-underline-offset: auto;
-    transition: all 0.2s ease-in-out;
-}
-
-.download:hover {
-    color: #ED5A95;
-    text-decoration: underline;
-    text-underline-offset: 0.3vh;
-}
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -168,6 +154,7 @@ p {
 
 #modalImg {
     max-width: 95vw;
+    max-height: 95vh;
 }
 
 .modal.active {
