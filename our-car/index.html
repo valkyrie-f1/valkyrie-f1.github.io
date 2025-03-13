@@ -17,6 +17,21 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+
+            window.addEventListener("load", function () {
+                const imageUrls = [
+                    "/Assets/OnlyCars/Gallery/fullsize/1.png",
+                    "/Assets/OnlyCars/Gallery/fullsize/2.png",
+                    "/Assets/OnlyCars/Gallery/fullsize/3.png"
+                ];
+
+                imageUrls.forEach(url => {
+                    const img = new Image();
+                    img.src = url;
+                });
+            });
+
+
             const galleryImages = document.querySelectorAll(".gallery img");
             const modal = document.getElementById("modal");
             const modalImg = document.getElementById("modalImg");
