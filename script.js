@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function() {
         isMouseMoved = true;
 
         const mouseDelta = parseFloat(carrousel.dataset.mouseDownAt) - e.clientX,
-              maxDelta = window.innerWidth * 0.4;
+              maxDelta = window.innerWidth * 0.5;
 
         const percentage = (mouseDelta / maxDelta) * -100,
               nextPercentageUnconstrained = parseFloat(carrousel.dataset.prevPercentage) + percentage,
-              nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+              nextPercentage = Math.max(-85, Math.min(nextPercentageUnconstrained, -15));
 
         carrousel.dataset.percentage = nextPercentage;
 
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         for (const image of carrousel.getElementsByClassName("image")) {
             image.animate(
-                { objectPosition: `${100 + nextPercentage}% center` }, 
+                { objectPosition: `${115 + nextPercentage}% center` }, 
                 { duration: 1200, fill: "forwards" }
             );
         }
