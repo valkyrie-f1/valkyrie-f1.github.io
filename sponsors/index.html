@@ -13,6 +13,21 @@
 
     <link rel="icon" href="/Assets/logo.jpg" type="image/x-n">
     <link rel="stylesheet" href="/sponsors/style.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function openLink(url) {
+                window.open(url, '_blank');
+            }
+
+            document.querySelectorAll('.sponsor').forEach(sponsor => {
+                sponsor.addEventListener('click', function () {
+                    openLink(this.dataset.url);
+                });
+            });
+        });
+    </script>
+
     <title>Valkyie | Sponsors</title>
 </head>
 <body>
@@ -24,9 +39,9 @@
     <div class="content">
         <h1>Proudly Supported by</h1>
         <div class="holder">
-            <a href="https://www.f1bearings.com/" class="sponsor"><img src="/Assets/Sponsors/F1_bearings.png" alt="F1 bearings" style="height: 100px;"></a>
-            <a href="https://www.fluidcodes.com/" class="sponsor"><img src="/Assets/Sponsors/FluidCodes.png" alt="Fluid Codes" style="height: 100px;"></a>
-            <a href="https://www.thinkninnovate.com/" class="sponsor"><img src="/Assets/Sponsors/TNI.png" alt="Think N Innovate" style="height: 100px;"></a>
+            <img class="sponsor" data-url="https://www.f1bearings.com/" src="/Assets/Sponsors/F1_bearings.png" alt="F1 bearings" draggable="false">
+            <img class="sponsor" data-url="https://fluidcodes.com/" src="/Assets/Sponsors/FluidCodes.png" alt="Fluid Codes" draggable="false">
+            <img class="sponsor" data-url="https://thinkninnovate.com/" src="/Assets/Sponsors/TNI.png" alt="Think N Innovate" draggable="false">
         </div>
     </div>
 </body>
