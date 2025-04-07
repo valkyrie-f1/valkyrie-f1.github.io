@@ -15,55 +15,7 @@
     <link rel="icon" href="/Assets/logo.jpg" type="image/x-n">
     <link rel="stylesheet" href="/our-car/style.css">
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-
-            window.addEventListener("load", function () {
-                const imageUrls = [
-                    "/Assets/OnlyCars/Gallery/fullsize/1.png",
-                    "/Assets/OnlyCars/Gallery/fullsize/2.png",
-                    "/Assets/OnlyCars/Gallery/fullsize/3.png"
-                ];
-
-                imageUrls.forEach(url => {
-                    const img = new Image();
-                    img.src = url;
-                });
-            });
-
-
-            const galleryImages = document.querySelectorAll(".gallery img");
-            const modal = document.getElementById("modal");
-            const modalImg = document.getElementById("modalImg");
-            const closeBtn = document.getElementById("closeBtn");
-            const downloadBtn = document.getElementById("downloadBtn");
-
-            galleryImages.forEach(img => {
-                img.addEventListener("click", function () {
-                    modal.classList.add("active");
-                    const fullSizeSrc = this.src.replace("/thumb/", "/fullsize/");
-                    modalImg.src = fullSizeSrc;
-                    downloadBtn.href = this.src.replace("/thumb/", "/raw/");
-                });
-            });
-
-            modal.addEventListener("click", function () {
-                modal.classList.remove("active");
-            });
-
-            closeBtn.addEventListener("click", function (event) {
-                event.stopPropagation();
-                modal.classList.remove("active");
-            });
-
-            document.addEventListener("keydown", function (event) {
-                if (event.key === "Escape") {
-                    modal.classList.remove("active");
-                }
-            });
-        });
-    </script>
-
+    <script src="/our-car/script.min.js" defer></script>
     <title>Valkyie | Our Car</title>
 </head>
 <body>
@@ -85,9 +37,14 @@
             sustainability and efficiency.
         </p>
         <h2>Tools used</h2>
+        <h3>Modelling</h3>
         <p><ul>
             <li>Blender</li>
             <li>Autodesk Fusion 360</li>
+        </ul></p>
+        <h3>CFD (Computational Fluid Dynamics)</h3>
+        <p><ul>
+            <li>Fluid Codes</li>
             <li>Autodesk CFD 2024</li>
         </ul></p>
         <h2>Gallery</h2>

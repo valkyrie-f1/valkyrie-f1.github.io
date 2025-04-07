@@ -38,6 +38,11 @@ h2 {
     margin-bottom: 0px;
 }
 
+h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
 a {
     color: #505050;
     text-decoration: none;
