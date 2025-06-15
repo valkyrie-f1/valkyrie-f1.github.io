@@ -19,11 +19,11 @@
         document.querySelectorAll('.sponsor').forEach(sponsor=>{sponsor.addEventListener('click',function(){openLink(this.dataset.url)})})})
     </script>
 
-    <title>synapse-racing | Home</title>
+    <title>Synapse Racing | Home</title>
 </head>
 <body>
     <article class="wrapper">
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <h2 class="sped">About us</h2>
             <br>
             <p>
@@ -32,10 +32,10 @@
                 Our pursuit of excellence, inventiveness, and our passion for racing are all manifestations of who we are.
             </p>
         </section>
-        <section class="process">
+        <section class="process" id="process">
             <h2>The Process</h2>
         </section>
-        <section class="sponsors">
+        <section class="sponsors" id="sponsors">
             <h2>Big thanks to</h2>
             <div class="sponsorImgs">
                 <img class="sponsor" data-url="https://f1bearings.com/" src="/Assets/Sponsors/1.png" alt="F1 bearings" title="F1 Bearings" draggable="false">
@@ -45,14 +45,12 @@
                 <img class="sponsor" data-url="https://chops.ae/" src="/Assets/Sponsors/5.jpg" alt="Chops" title="Chops" draggable="false">
             </div>
         </section>
-        <section class="end">
+        <section class="end" id="contact">
             <h2 class="end-title">Contact us</h2>
             <div class="end-text">
-                <div>
-                    <i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;<a id="contact" href="https://www.instagram.com/valkyrie.f1/">instagram</a>
-                    <br>
-                    <i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;&nbsp;<a id="contact" href="mailto:">mail</a>
-                </div>
+                <span><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a id="contact" href="https://www.instagram.com/synapseracing/">instagram</a></span>
+                <br style="user-select: none;">
+                <span><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;&nbsp;<a id="contact" href="mailto:">mail</a></span>
             </div>
         </section>
     </article>
