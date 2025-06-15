@@ -1,88 +1,83 @@
-html { user-select: none; overflow: hidden; background-color: #141414; }
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-body {
-    z-index: 1;
-    height: 100vh;
-    width: 100vw;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0rem;
-    overflow: hidden;
+html {
+    height: fit-content;
+    background-color: #161415;
+    color: white;
+}
+
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.4rem;
+    margin: 0px 20vw;
 }
 
 a {
-    color: #505050;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #00000000;
+    color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+    transition: all 0.3s ease;
 }
 
-.logo {
-    position: absolute;
-    top: 0.1%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    height: 75px;
+a:hover {
+    text-decoration-color: #ffffff;
 }
 
-.nav {
-    position: absolute;
-    top: 2%;
-    width: 100%;
+section { padding: 1rem; }
+
+.wrapper {
+    height: 100vh;
+    height: 100dvh;
+}
+
+.about-us {
+    height: 50vh;
+    text-align: center;
     display: flex;
-    font-weight: bold;
-    flex-direction: row;
-    gap: 8rem;
+    flex-direction: column;
     justify-content: center;
 }
 
-#home {
-    color: #F6F9FB;
+.process {
+    border-top: #ffffff;
+    height: 50vh;
 }
 
-#about {
-    transition: all 0.2s ease-in-out;
+.sponsors {
+    height: 50vh;
+    background-color: #1A5E63;
 }
 
-#about:hover {
-    color: #F6F9FB;
-}
-
-.txt {
-    position: absolute;
-    top: 97%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    font-size: 2vh;
-    color: #474747;
-}
-
-#left-right {
-    color: #7b7b7b;
-}
-
-#carrousel {
-    z-index: 0;
+.end {
+    height: 20vh;
+    background-color: #523249;
     display: flex;
-    gap: 4vmin;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-15%, -50%); 
-    user-select: none;
+    flex-direction: row;
 }
 
-#carrousel > .image {
-    width: 40vmin;
-    height: 56vmin;
-    object-fit: cover;
-    object-position: 100% center;
+.end-title {
+    flex-basis: calc(25%);
+    border-right: 1px solid #0000007f;
 }
 
-#arrow {
-    position: absolute;
-    left: 50%;
-    top: 16%;
-    transform: translate(-50%, 0%);
-    font-size: 3vh;
-    color: #474747;
+.end-text {
+    padding-left: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.about-us ::selection {
+    background-color: #1A5E63;
 }
