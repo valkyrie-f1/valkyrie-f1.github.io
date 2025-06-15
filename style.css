@@ -49,6 +49,17 @@ section { padding: 1rem; }
     justify-content: center;
 }
 
+.underlined {
+    text-decoration: underline;
+    text-decoration-color: #523249;
+    transition: all 0.15s ease-in-out;
+}
+
+.underlined:hover {
+    cursor: pointer;
+    color: #523249;
+}
+
 .process {
     border-top: #ffffff;
     height: 50vh;
@@ -115,5 +126,5 @@ section { padding: 1rem; }
 }
 
 .sponsors > ::selection {
-    background: #523249;
+    background-color: #523249;
 }
