@@ -41,7 +41,8 @@ section { padding: 1rem; }
 }
 
 .about-us {
-    height: 50vh;
+    height: fit-content; /* add 5vh */
+    min-height: 50vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -54,8 +55,38 @@ section { padding: 1rem; }
 }
 
 .sponsors {
-    height: 50vh;
+    height: max(50vh, fit-content);
     background-color: #1A5E63;
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsorImgs {
+    height: 100%;
+    border-radius: 10px;
+    border: 3px solid #0000005a;
+    margin: 1rem 3vw 1rem 3vw;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    gap: 4em;
+}
+
+.sponsor{
+    max-height: 10rem;
+    height: auto;
+    max-width: 80vw;
+    border-radius: 6px;
+    object-fit: contain;
+    transition: all 0.15s ease-in-out;
+}
+
+.sponsor:hover{
+    cursor: pointer;
+    box-shadow: 12px 12px 12px #0000003b, -10px -10px 10px #15656A;
 }
 
 .end {

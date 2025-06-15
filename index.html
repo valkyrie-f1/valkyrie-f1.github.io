@@ -11,7 +11,13 @@
     <link rel="stylesheet" href="/Assets/css/all.min.css">
     <link rel="stylesheet" href="/Assets/css/fontawesome.min.css">
 
+    <link rel="icon" href="/Assets/logo_transparent.jpg" type="image/x-n">
     <link rel="stylesheet" href="/style.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){function openLink(url){window.open(url,'_blank')}
+        document.querySelectorAll('.sponsor').forEach(sponsor=>{sponsor.addEventListener('click',function(){openLink(this.dataset.url)})})})
+    </script>
 
     <title>synapse-racing | Home</title>
 </head>
@@ -19,6 +25,7 @@
     <article class="wrapper">
         <section class="about-us">
             <h2 class="sped">About us</h2>
+            <br>
             <p>
                 Our team Synapse Racing and its shared values, vision, and objectives essentially define what our team identity is about, it unites us as a single entity.
                 Everyone in the team brings unique skills and abilities to the table, which promotes mutual respect and cooperation.
@@ -30,6 +37,13 @@
         </section>
         <section class="sponsors">
             <h2>Big thanks to</h2>
+            <div class="sponsorImgs">
+                <img class="sponsor" data-url="https://f1bearings.com/" src="/Assets/Sponsors/1.png" alt="F1 bearings" title="F1 Bearings" draggable="false">
+                <img class="sponsor" data-url="https://powerledme.com/" src="/Assets/Sponsors/2.png" alt="Powerled" title="Powerled" draggable="false">
+                <img class="sponsor" src="/Assets/Sponsors/3.webp" alt="Pepper Pot" title="Pepper Pot" draggable="false">
+                <img class="sponsor" data-url="https://www.greentech-heatshield.com/" src="/Assets/Sponsors/4.jpg" alt="Greentech-Heatsheild" title="Greentech-Heatsheild" draggable="false">
+                <img class="sponsor" data-url="https://chops.ae/" src="/Assets/Sponsors/5.jpg" alt="Chops" title="Chops" draggable="false">
+            </div>
         </section>
         <section class="end">
             <h2 class="end-title">Contact us</h2>
