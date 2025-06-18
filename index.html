@@ -14,10 +14,7 @@
     <link rel="icon" href="/Assets/imgs/logo.png" type="image/x-n">
     <link rel="stylesheet" href="/style.css">
 
-    <script>
-        document.addEventListener("DOMContentLoaded",function(){function openLink(url){window.open(url,'_blank')}
-        document.querySelectorAll('.sponsor').forEach(sponsor=>{sponsor.addEventListener('click',function(){openLink(this.dataset.url)})})})
-    </script>
+    <script src="/script.js"></script>
 
     <title>Synapse Racing | Home</title>
 </head>
@@ -33,6 +30,12 @@
         </section>
         <section class="car" id="car">
             <h2>Our Car</h2>
+            <div class="gallery">
+                <img src="/Assets/OnlyCars/Gallery/1.png" draggable="false">
+                <img src="/Assets/OnlyCars/Gallery/2.png" draggable="false">
+                <img src="/Assets/OnlyCars/Gallery/3.png" draggable="false">
+                <img src="/Assets/OnlyCars/Gallery/4.jpg" draggable="false">
+            </div>
         </section>
         <section class="sponsors" id="sponsors">
             <h2>Big thanks to</h2>
@@ -59,5 +62,12 @@
             </div>
         </section>
     </article>
+    <div class="modal" id="modal">
+        <div class="controls">
+            <!-- <button style="all: unset;"><a id="downloadBtn" href="#" download><i class="fa-solid fa-download"></i></a></button> -->
+            <button class="close-btn" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <img id="modalImg" src="" alt="">
+    </div>
 </body>
 </html>
