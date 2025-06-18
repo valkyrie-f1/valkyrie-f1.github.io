@@ -18,7 +18,6 @@ h2 {
 p {
     font-family: 'Helvetica', sans-serif;
     font-size: 1.4rem;
-    margin: 0px 20vw;
 }
 
 a {
@@ -131,3 +130,7 @@ section { padding: 1rem; }
 .sponsors > ::selection {
     background-color: #523249;
 }
+
+@media (min-width: 1001px) { .about-us { margin: 0px 20vw; } }
+
+@media (max-width: 1000px) { .about-us { margin: 0px 5vw; } }
