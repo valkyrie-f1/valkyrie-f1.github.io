@@ -16,7 +16,7 @@ h2 {
 }
 
 p {
-    font-family: 'Helvetica', sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 1.4rem;
 }
 
@@ -24,7 +24,7 @@ a {
     text-decoration: underline;
     text-decoration-color: #00000000;
     color: #ffffff;
-    font-family: 'Helvetica', sans-serif;
+    font-family: "Lato", sans-serif;
     transition: all 0.3s ease;
 }
 
@@ -56,7 +56,7 @@ section { padding: 1rem; }
 
 .underlined:hover {
     cursor: pointer;
-    color: #523249;
+    color: #1A5E63;
 }
 
 .car {
